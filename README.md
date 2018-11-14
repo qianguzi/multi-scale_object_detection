@@ -1,2 +1,3 @@
-# multi-scale_object_detection
-A Multi-scale Target Detection Algorithm Based on Deep Learning
+# Multi-scale object detection
+
+  A Multi-scale Target Detection Algorithm Based on Deep Learning
