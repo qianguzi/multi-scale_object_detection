@@ -3,7 +3,7 @@ from __future__ import division
 from __future__ import print_function
 
 import tensorflow as tf
-from shape_utils import combined_static_and_dynamic_shape
+from object_detection.utils.shape_utils import combined_static_and_dynamic_shape
 
 
 def grid_coord(coord_x, coord_y, scope=None):

@@ -7,7 +7,7 @@ import tensorflow as tf
 from tensorflow.contrib import slim
 
 import preprocess_op
-from shape_utils import combined_static_and_dynamic_shape
+from object_detection.utils.shape_utils import combined_static_and_dynamic_shape
 from slim_utils.nets.mobilenet import mobilenet
 from slim_utils.nets.mobilenet.mobilenet import safe_arg_scope
 from slim_utils.nets.mobilenet import mobilenet_v2
