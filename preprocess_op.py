@@ -1,3 +1,7 @@
+from __future__ import absolute_import
+from __future__ import division
+from __future__ import print_function
+
 import tensorflow as tf
 from shape_utils import combined_static_and_dynamic_shape
 
@@ -30,7 +34,7 @@ def generate_boxes(grid_size, scope=None):
   """
   with tf.name_scope(scope, 'Boxes_generator', [grid_size]):
     grid_size = tf.cast(grid_size, tf.int32)
-    node = tf.linspace(0, 1, grid_size+1)
+    node = tf.linspace(0., 1., grid_size+1)
     ul_node = tf.slice(node, [0], [grid_size])
     ul_coord = grid_coord(ul_node, ul_node, scope='Grid_coord_ul')
     dr_node = tf.slice(node, [1], [grid_size])
